@@ -1,0 +1,9 @@
+<aspectj>
+<aspects>
+<aspect name="ogg.UsuariosDataOnDemand_Roo_DataOnDemand"/>
+<aspect name="ogg.UsuariosIntegrationTest_Roo_Configurable"/>
+<aspect name="ogg.UsuariosIntegrationTest_Roo_IntegrationTest"/>
+<aspect name="ogg.UsuariosDataOnDemand_Roo_Configurable"/>
+</aspects>
+</aspectj>
+

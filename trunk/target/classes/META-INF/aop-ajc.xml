@@ -1,0 +1,11 @@
+<aspectj>
+<aspects>
+<aspect name="ogg.Usuarios_Roo_Entity"/>
+<aspect name="ogg.Usuarios_Roo_Configurable"/>
+<aspect name="ogg.Usuarios_Roo_JavaBean"/>
+<aspect name="ogg.web.ApplicationConversionServiceFactoryBean_Roo_ConversionService"/>
+<aspect name="ogg.Usuarios_Roo_ToString"/>
+<aspect name="ogg.web.UsuariosController_Roo_Controller"/>
+</aspects>
+</aspectj>
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_ogg_Usuarios" modelAttribute="usuarios" path="/usuarioses" versionField="Version" z="yl6fbkVIySCHbbmiHzyi8aYtO+U=">
+        <field:input field="DNI" id="c_ogg_Usuarios_DNI" max="10" min="9" required="true" z="rbNGVN9le3w+4lNU0Wt8pYlzM7U="/>
+        <field:input field="Nombre" id="c_ogg_Usuarios_Nombre" max="30" min="2" required="true" z="TD80HR+vtNsb+WsntRWGBKzj4qI="/>
+        <field:textarea field="Apellidos" id="c_ogg_Usuarios_Apellidos" required="true" z="GczPVMSX1MrwUA3eKD5otAfVpPY="/>
+        <field:textarea field="EMAIL" id="c_ogg_Usuarios_EMAIL" required="true" z="a2C596gBOpBNxtV7mLR1jaXO4pg="/>
+        <field:input field="Password" id="c_ogg_Usuarios_Password" max="16" min="3" required="true" z="drZBepUVl3na1jP2uxaHIIa5Dao="/>
+        <field:input field="Telefono" id="c_ogg_Usuarios_Telefono" max="15" min="1" required="true" z="f34BAJWKBp2ZJY7xrfGpAEsx/po="/>
+        <field:input field="Direccion" id="c_ogg_Usuarios_Direccion" max="30" min="3" required="true" z="WGflu30eYvlFdNVuKr8IqWYeKto="/>
+        <field:input field="Poblacion" id="c_ogg_Usuarios_Poblacion" max="30" min="1" required="true" z="A+LvGOUkg73SxJE19JRY2KeAi48="/>
+        <field:input field="Provincia" id="c_ogg_Usuarios_Provincia" max="20" min="1" required="true" z="Sbag4uh/r0UwjiUQNV5iBX8x8yU="/>
+        <field:input field="CP" id="c_ogg_Usuarios_CP" max="5" min="5" required="true" z="xKyr54gJPBBZWf4z3TdhtYVOQjg="/>
+        <field:input field="FechaNacimiento" id="c_ogg_Usuarios_FechaNacimiento" max="30" min="6" required="true" z="Rp0Ui6M05TiBtIMffsuskqpTCnc="/>
+    </form:update>
+</div>

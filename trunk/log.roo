@@ -1,0 +1,20 @@
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-16 20:22:30
+project --topLevelPackage ogg --projectName OpenGisGvnix --java 6
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-16 20:22:37
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-16 20:22:50
+hint
+persistence setup --provider HIBERNATE --database HYPERSONIC_IN_MEMORY
+entity --class ~.Usuarios --testAutomatically
+field string --fieldName DNI --notNull --sizeMax 10 --sizeMin 9
+field string --fieldName Nombre --notNull --sizeMax 30 --sizeMin 2
+field string --fieldName Apellidos --notNull --sizeMax 50 --sizeMin 2
+field string --fieldName EMAIL --notNull --sizeMax 40 --sizeMin 1
+field string --fieldName Password --notNull --sizeMax 16 --sizeMin 3
+field string --fieldName Telefono --notNull --sizeMax 15 --sizeMin 1
+field string --fieldName Direccion --notNull --sizeMax 30 --sizeMin 3
+field string --fieldName Poblacion --notNull --sizeMax 30 --sizeMin 1
+field string --fieldName Provincia --notNull --sizeMax 20 --sizeMin 1
+field string --fieldName CP --notNull --sizeMax 5 --sizeMin 5
+field string --fieldName FechaNacimiento --notNull --sizeMax 30 --sizeMin 6
+controller all --package ~.web
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-16 20:33:23

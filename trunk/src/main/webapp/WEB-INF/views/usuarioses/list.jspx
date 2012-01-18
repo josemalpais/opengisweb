@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_ogg_Usuarios" items="${usuarioses}" z="cvFDdi97yumJZWmv8w1uE0xauVM=">
+        <table:table data="${usuarioses}" id="l_ogg_Usuarios" path="/usuarioses" z="hFfxZUZJRUtHJfNU4uDbvKcTOhk=">
+            <table:column id="c_ogg_Usuarios_DNI" property="DNI" z="fYpPlkhufsaTVNIonJ2bJqHHuJI="/>
+            <table:column id="c_ogg_Usuarios_Nombre" property="nombre" z="+DwQMlkDAs7siL2FZqtHprZ3mhk="/>
+            <table:column id="c_ogg_Usuarios_Apellidos" property="apellidos" z="5X4LzUjU/CwFtjGsOABy9W2KIy4="/>
+            <table:column id="c_ogg_Usuarios_EMAIL" property="EMAIL" z="XDYXzZ7Ieket2a5wiTe4IE8DTCA="/>
+            <table:column id="c_ogg_Usuarios_Password" property="password" z="01gHYIE8E6ztuog20UDWS5kTh8E="/>
+            <table:column id="c_ogg_Usuarios_Telefono" property="telefono" z="0aXRtfDZtz/n6EaPbryeG+jRURw="/>
+        </table:table>
+    </page:list>
+</div>
