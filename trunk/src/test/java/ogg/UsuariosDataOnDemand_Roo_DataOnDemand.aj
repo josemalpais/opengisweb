@@ -40,64 +40,58 @@ privileged aspect UsuariosDataOnDemand_Roo_DataOnDemand {
     
     public void UsuariosDataOnDemand.setApellidos(Usuarios obj, int index) {
         String Apellidos = "Apellidos_" + index;
-        if (Apellidos.length() > 50) {
-            Apellidos = Apellidos.substring(0, 50);
+        if (Apellidos.length() > 25) {
+            Apellidos = Apellidos.substring(0, 25);
         }
         obj.setApellidos(Apellidos);
     }
     
     public void UsuariosDataOnDemand.setCP(Usuarios obj, int index) {
-        String CP = "CPx_" + index;
-        if (CP.length() > 5) {
-            CP = CP.substring(0, 5);
-        }
+        String CP = "CP_" + index;
         obj.setCP(CP);
     }
     
     public void UsuariosDataOnDemand.setDNI(Usuarios obj, int index) {
         String DNI = "DNIxxxx_" + index;
-        if (DNI.length() > 10) {
-            DNI = DNI.substring(0, 10);
+        if (DNI.length() > 9) {
+            DNI = DNI.substring(0, 9);
         }
         obj.setDNI(DNI);
     }
     
     public void UsuariosDataOnDemand.setDireccion(Usuarios obj, int index) {
         String Direccion = "Direccion_" + index;
-        if (Direccion.length() > 30) {
-            Direccion = Direccion.substring(0, 30);
+        if (Direccion.length() > 25) {
+            Direccion = Direccion.substring(0, 25);
         }
         obj.setDireccion(Direccion);
     }
     
     public void UsuariosDataOnDemand.setEMAIL(Usuarios obj, int index) {
         String EMAIL = "EMAIL_" + index;
-        if (EMAIL.length() > 40) {
-            EMAIL = EMAIL.substring(0, 40);
+        if (EMAIL.length() > 20) {
+            EMAIL = EMAIL.substring(0, 20);
         }
         obj.setEMAIL(EMAIL);
     }
     
     public void UsuariosDataOnDemand.setFechaNacimiento(Usuarios obj, int index) {
         String FechaNacimiento = "FechaNacimiento_" + index;
-        if (FechaNacimiento.length() > 30) {
-            FechaNacimiento = FechaNacimiento.substring(0, 30);
-        }
         obj.setFechaNacimiento(FechaNacimiento);
     }
     
     public void UsuariosDataOnDemand.setNombre(Usuarios obj, int index) {
         String Nombre = "Nombre_" + index;
-        if (Nombre.length() > 30) {
-            Nombre = Nombre.substring(0, 30);
+        if (Nombre.length() > 20) {
+            Nombre = Nombre.substring(0, 20);
         }
         obj.setNombre(Nombre);
     }
     
     public void UsuariosDataOnDemand.setPassword(Usuarios obj, int index) {
         String Password = "Password_" + index;
-        if (Password.length() > 16) {
-            Password = Password.substring(0, 16);
+        if (Password.length() > 10) {
+            Password = Password.substring(0, 10);
         }
         obj.setPassword(Password);
     }
@@ -120,9 +114,6 @@ privileged aspect UsuariosDataOnDemand_Roo_DataOnDemand {
     
     public void UsuariosDataOnDemand.setTelefono(Usuarios obj, int index) {
         String Telefono = "Telefono_" + index;
-        if (Telefono.length() > 15) {
-            Telefono = Telefono.substring(0, 15);
-        }
         obj.setTelefono(Telefono);
     }
     

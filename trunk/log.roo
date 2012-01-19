@@ -18,3 +18,4 @@ field string --fieldName CP --notNull --sizeMax 5 --sizeMin 5
 field string --fieldName FechaNacimiento --notNull --sizeMax 30 --sizeMin 6
 controller all --package ~.web
 // Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-01-16 20:33:23
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-01-19 15:57:51
