@@ -5,8 +5,8 @@ package ogg;
 
 import org.springframework.beans.factory.annotation.Configurable;
 
-privileged aspect UsuariosIntegrationTest_Roo_Configurable {
+privileged aspect ProductoDataOnDemand_Roo_Configurable {
     
-    declare @type: UsuariosIntegrationTest: @Configurable;
+    declare @type: ProductoDataOnDemand: @Configurable;
     
 }

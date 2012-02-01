@@ -14,99 +14,99 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Version;
-import ogg.Usuarios;
+import ogg.Producto;
 import org.springframework.transaction.annotation.Transactional;
 
-privileged aspect Usuarios_Roo_Entity {
+privileged aspect Producto_Roo_Entity {
     
-    declare @type: Usuarios: @Entity;
+    declare @type: Producto: @Entity;
     
     @PersistenceContext
-    transient EntityManager Usuarios.entityManager;
+    transient EntityManager Producto.entityManager;
     
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id")
-    private Long Usuarios.id;
+    private Long Producto.id;
     
     @Version
     @Column(name = "version")
-    private Integer Usuarios.version;
+    private Integer Producto.version;
     
-    public Long Usuarios.getId() {
+    public Long Producto.getId() {
         return this.id;
     }
     
-    public void Usuarios.setId(Long id) {
+    public void Producto.setId(Long id) {
         this.id = id;
     }
     
-    public Integer Usuarios.getVersion() {
+    public Integer Producto.getVersion() {
         return this.version;
     }
     
-    public void Usuarios.setVersion(Integer version) {
+    public void Producto.setVersion(Integer version) {
         this.version = version;
     }
     
     @Transactional
-    public void Usuarios.persist() {
+    public void Producto.persist() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.persist(this);
     }
     
     @Transactional
-    public void Usuarios.remove() {
+    public void Producto.remove() {
         if (this.entityManager == null) this.entityManager = entityManager();
         if (this.entityManager.contains(this)) {
             this.entityManager.remove(this);
         } else {
-            Usuarios attached = Usuarios.findUsuarios(this.id);
+            Producto attached = Producto.findProducto(this.id);
             this.entityManager.remove(attached);
         }
     }
     
     @Transactional
-    public void Usuarios.flush() {
+    public void Producto.flush() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.flush();
     }
     
     @Transactional
-    public void Usuarios.clear() {
+    public void Producto.clear() {
         if (this.entityManager == null) this.entityManager = entityManager();
         this.entityManager.clear();
     }
     
     @Transactional
-    public Usuarios Usuarios.merge() {
+    public Producto Producto.merge() {
         if (this.entityManager == null) this.entityManager = entityManager();
-        Usuarios merged = this.entityManager.merge(this);
+        Producto merged = this.entityManager.merge(this);
         this.entityManager.flush();
         return merged;
     }
     
-    public static final EntityManager Usuarios.entityManager() {
-        EntityManager em = new Usuarios().entityManager;
+    public static final EntityManager Producto.entityManager() {
+        EntityManager em = new Producto().entityManager;
         if (em == null) throw new IllegalStateException("Entity manager has not been injected (is the Spring Aspects JAR configured as an AJC/AJDT aspects library?)");
         return em;
     }
     
-    public static long Usuarios.countUsuarioses() {
-        return entityManager().createQuery("SELECT COUNT(o) FROM Usuarios o", Long.class).getSingleResult();
+    public static long Producto.countProductoes() {
+        return entityManager().createQuery("SELECT COUNT(o) FROM Producto o", Long.class).getSingleResult();
     }
     
-    public static List<Usuarios> Usuarios.findAllUsuarioses() {
-        return entityManager().createQuery("SELECT o FROM Usuarios o", Usuarios.class).getResultList();
+    public static List<Producto> Producto.findAllProductoes() {
+        return entityManager().createQuery("SELECT o FROM Producto o", Producto.class).getResultList();
     }
     
-    public static Usuarios Usuarios.findUsuarios(Long id) {
+    public static Producto Producto.findProducto(Long id) {
         if (id == null) return null;
-        return entityManager().find(Usuarios.class, id);
+        return entityManager().find(Producto.class, id);
     }
     
-    public static List<Usuarios> Usuarios.findUsuariosEntries(int firstResult, int maxResults) {
-        return entityManager().createQuery("SELECT o FROM Usuarios o", Usuarios.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
+    public static List<Producto> Producto.findProductoEntries(int firstResult, int maxResults) {
+        return entityManager().createQuery("SELECT o FROM Producto o", Producto.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
 }

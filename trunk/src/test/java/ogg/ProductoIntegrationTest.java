@@ -3,8 +3,8 @@ package ogg;
 import org.junit.Test;
 import org.springframework.roo.addon.test.RooIntegrationTest;
 
-@RooIntegrationTest(entity = Usuarios.class)
-public class UsuariosIntegrationTest {
+@RooIntegrationTest(entity = Producto.class)
+public class ProductoIntegrationTest {
 
     @Test
     public void testMarkerMethod() {
