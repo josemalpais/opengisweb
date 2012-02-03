@@ -3,49 +3,66 @@
 
 package org.opengis.gvnix;
 
+import java.lang.Boolean;
 import java.lang.String;
-import org.opengis.gvnix.ogg.enumerated.enumTarea;
+import org.opengis.gvnix.domain.enumerated.Tarea;
 
 privileged aspect Producto_Roo_JavaBean {
     
-    public int Producto.getID() {
-        return this.ID;
+    public int Producto.getIdprod() {
+        return this.idprod;
     }
     
-    public void Producto.setID(int ID) {
-        this.ID = ID;
+    public void Producto.setIdprod(int idprod) {
+        this.idprod = idprod;
     }
     
     public String Producto.getNombre() {
-        return this.Nombre;
+        return this.nombre;
     }
     
-    public void Producto.setNombre(String Nombre) {
-        this.Nombre = Nombre;
-    }
-    
-    public enumTarea Producto.getTarea() {
-        return this.Tarea;
-    }
-    
-    public void Producto.setTarea(enumTarea Tarea) {
-        this.Tarea = Tarea;
-    }
-    
-    public String Producto.getDNI() {
-        return this.DNI;
-    }
-    
-    public void Producto.setDNI(String DNI) {
-        this.DNI = DNI;
+    public void Producto.setNombre(String nombre) {
+        this.nombre = nombre;
     }
     
     public String Producto.getDescripcion() {
-        return this.Descripcion;
+        return this.descripcion;
     }
     
-    public void Producto.setDescripcion(String Descripcion) {
-        this.Descripcion = Descripcion;
+    public void Producto.setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+    
+    public Tarea Producto.getNomtarea() {
+        return this.nomtarea;
+    }
+    
+    public void Producto.setNomtarea(Tarea nomtarea) {
+        this.nomtarea = nomtarea;
+    }
+    
+    public int Producto.getDosis() {
+        return this.dosis;
+    }
+    
+    public void Producto.setDosis(int dosis) {
+        this.dosis = dosis;
+    }
+    
+    public String Producto.getDni() {
+        return this.dni;
+    }
+    
+    public void Producto.setDni(String dni) {
+        this.dni = dni;
+    }
+    
+    public Boolean Producto.getActivo() {
+        return this.activo;
+    }
+    
+    public void Producto.setActivo(Boolean activo) {
+        this.activo = activo;
     }
     
 }

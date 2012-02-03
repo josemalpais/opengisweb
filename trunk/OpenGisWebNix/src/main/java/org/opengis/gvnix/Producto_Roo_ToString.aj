@@ -9,12 +9,14 @@ privileged aspect Producto_Roo_ToString {
     
     public String Producto.toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("DNI: ").append(getDNI()).append(", ");
+        sb.append("Activo: ").append(getActivo()).append(", ");
         sb.append("Descripcion: ").append(getDescripcion()).append(", ");
-        sb.append("ID: ").append(getID()).append(", ");
+        sb.append("Dni: ").append(getDni()).append(", ");
+        sb.append("Dosis: ").append(getDosis()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
+        sb.append("Idprod: ").append(getIdprod()).append(", ");
         sb.append("Nombre: ").append(getNombre()).append(", ");
-        sb.append("Tarea: ").append(getTarea()).append(", ");
+        sb.append("Nomtarea: ").append(getNomtarea()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();
     }
