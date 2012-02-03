@@ -1,0 +1,13 @@
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-03 15:44:13
+project --topLevelPackage org.opengis.gvnix --projectName OpenGisWebNix --java 6
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log closed at 2012-02-03 15:44:23
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-03 15:45:42
+persistence setup --provider HIBERNATE --database MYSQL --hostName 10.2.1.43:3306 --databaseName opengisweb --userName dai2proyecto --password dai20112012
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.mysql-connector-java
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
+addon list
+osgi obr url add --url http://spring-roo-repository.springsource.org/repository.xml.zip
+osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.mysql-connector-java
+osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
+addon install id 42
