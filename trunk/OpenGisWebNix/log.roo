@@ -11,3 +11,13 @@ osgi obr url add --url http://spring-roo-repository.springsource.org/repository.
 osgi obr start --bundleSymbolicName org.springframework.roo.wrapping.mysql-connector-java
 osgi obr url remove --url http://spring-roo-repository.springsource.org/repository.xml.zip
 addon install id 42
+// Spring Roo 1.1.5.RELEASE [rev d3a68c3] log opened at 2012-02-03 16:23:01
+entity --class ~.Parcela --identifierColumn idParcela 
+field string --fieldName Alias --notNull
+field number --fieldName provincia --type int --notNull --max 999
+field number --fieldName poblacion --type int --notNull --max 999
+field number --fieldName poligono --type int --notNull --max 999
+field number --fieldName numero --type int --notNull --max 99999
+field boolean --fieldName activo --notNull 
+field number --fieldName partida --type int --notNull --max 999
+field string --fieldName dniPropietario --notNull 
