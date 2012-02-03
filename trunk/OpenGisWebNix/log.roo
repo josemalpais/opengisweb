@@ -21,3 +21,29 @@ field number --fieldName numero --type int --notNull --max 99999
 field boolean --fieldName activo --notNull 
 field number --fieldName partida --type int --notNull --max 999
 field string --fieldName dniPropietario --notNull 
+entity --class ~.Usuario --TestAutomatically --identifierColumn idUsuario
+field string --fieldName Dni --notNull --sizeMax 9
+field string --fieldName Nombre --notNull --sizeMax 30
+field string --fieldName Apellidos --notNull --sizeMax 50
+field string --fieldName Email --notNull --sizeMax 40
+field string --fieldName Password --sizeMax 40 --notNull
+field string --fieldName Tipo --sizeMax 15 --notNull 
+field number --fieldName Veces --type int
+field number --fieldName Telefono --type int --notNull
+field string --fieldName Direccion --sizeMax 30 --notNull 
+field string --fieldName Poblacion --sizeMax 30 --notNull 
+field string --fieldName Provincia --sizeMax 20 --notNull 
+field number --fieldName Cp --type int --notNull
+field boolean --fieldName Activo --notNull 
+field string --fieldName Idioma --sizeMax 20 --notNull 
+field date --fieldName Fecha_de_Nacimiento --type java.util.Calendar
+entity --class ~.Producto --testAutomatically
+field number --fieldName ID --type int --notNull
+field string --fieldName Nombre --notNull
+enum type --class ~.ogg.enumerated.Tarea
+enum constant --name Liquido
+enum constant --name Granulado
+field enum --fieldName Tarea --type ~.enumerated.Tarea --enumType STRING --class ~.Producto
+// [failed] field number --fieldName Dosis --type int --notNull 
+field string --fieldName DNI --notNull
+field string --fieldName Descripcion --notNull --sizeMax 100
