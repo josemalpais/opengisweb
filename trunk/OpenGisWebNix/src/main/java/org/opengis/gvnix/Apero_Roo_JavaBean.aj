@@ -5,7 +5,6 @@ package org.opengis.gvnix;
 
 import java.lang.Integer;
 import java.lang.String;
-import java.util.Set;
 import org.opengis.gvnix.Usuario;
 import org.opengis.gvnix.domain.enumerated.Tarea;
 
@@ -35,12 +34,12 @@ privileged aspect Apero_Roo_JavaBean {
         this.descripcion = descripcion;
     }
     
-    public Set<Usuario> Apero.getDni() {
-        return this.dni;
+    public Usuario Apero.getUsuario() {
+        return this.usuario;
     }
     
-    public void Apero.setDni(Set<Usuario> dni) {
-        this.dni = dni;
+    public void Apero.setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
     
     public Tarea Apero.getTarea() {

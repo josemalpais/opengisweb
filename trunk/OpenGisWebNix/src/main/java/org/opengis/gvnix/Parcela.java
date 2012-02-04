@@ -1,10 +1,13 @@
 package org.opengis.gvnix;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Max;
+import org.opengis.gvnix.Usuario;
+import javax.persistence.ManyToOne;
 
 @RooJavaBean
 @RooToString
@@ -30,13 +33,15 @@ public class Parcela {
     @Max(99999L)
     private int numero;
 
-    @NotNull
+    @Value("True")
     private Boolean activo;
 
     @NotNull
     @Max(999L)
     private int partida;
 
+
     @NotNull
-    private String dniPropietario;
+    @ManyToOne
+    private Usuario propietario;
 }

@@ -17,14 +17,11 @@ privileged aspect Usuario_Roo_ToString {
         sb.append("Email: ").append(getEmail()).append(", ");
         sb.append("Fecha_de_Nacimiento: ").append(getFecha_de_Nacimiento() == null ? "null" : getFecha_de_Nacimiento().getTime()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
-        sb.append("Idioma: ").append(getIdioma()).append(", ");
         sb.append("Nombre: ").append(getNombre()).append(", ");
         sb.append("Password: ").append(getPassword()).append(", ");
         sb.append("Poblacion: ").append(getPoblacion()).append(", ");
         sb.append("Provincia: ").append(getProvincia()).append(", ");
         sb.append("Telefono: ").append(getTelefono()).append(", ");
-        sb.append("Tipo: ").append(getTipo()).append(", ");
-        sb.append("Veces: ").append(getVeces()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();
     }

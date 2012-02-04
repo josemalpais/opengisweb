@@ -5,6 +5,7 @@ package org.opengis.gvnix;
 
 import java.lang.Boolean;
 import java.lang.String;
+import org.opengis.gvnix.Usuario;
 
 privileged aspect Parcela_Roo_JavaBean {
     
@@ -64,12 +65,12 @@ privileged aspect Parcela_Roo_JavaBean {
         this.partida = partida;
     }
     
-    public String Parcela.getDniPropietario() {
-        return this.dniPropietario;
+    public Usuario Parcela.getPropietario() {
+        return this.propietario;
     }
     
-    public void Parcela.setDniPropietario(String dniPropietario) {
-        this.dniPropietario = dniPropietario;
+    public void Parcela.setPropietario(Usuario propietario) {
+        this.propietario = propietario;
     }
     
 }

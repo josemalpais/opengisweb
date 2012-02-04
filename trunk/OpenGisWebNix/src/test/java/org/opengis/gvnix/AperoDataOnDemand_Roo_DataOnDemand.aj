@@ -13,6 +13,7 @@ import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import org.opengis.gvnix.Apero;
+import org.opengis.gvnix.Usuario;
 import org.opengis.gvnix.domain.enumerated.Tarea;
 import org.springframework.stereotype.Component;
 
@@ -30,6 +31,7 @@ privileged aspect AperoDataOnDemand_Roo_DataOnDemand {
         setNombre(obj, index);
         setTamanyo(obj, index);
         setTarea(obj, index);
+        setUsuario(obj, index);
         return obj;
     }
     
@@ -60,6 +62,11 @@ privileged aspect AperoDataOnDemand_Roo_DataOnDemand {
     public void AperoDataOnDemand.setTarea(Apero obj, int index) {
         Tarea tarea = Tarea.class.getEnumConstants()[0];
         obj.setTarea(tarea);
+    }
+    
+    public void AperoDataOnDemand.setUsuario(Apero obj, int index) {
+        Usuario usuario = null;
+        obj.setUsuario(usuario);
     }
     
     public Apero AperoDataOnDemand.getSpecificApero(int index) {

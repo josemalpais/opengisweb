@@ -10,11 +10,11 @@ privileged aspect Apero_Roo_ToString {
     public String Apero.toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Descripcion: ").append(getDescripcion()).append(", ");
-        sb.append("Dni: ").append(getDni() == null ? "null" : getDni().size()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Nombre: ").append(getNombre()).append(", ");
         sb.append("Tamanyo: ").append(getTamanyo()).append(", ");
         sb.append("Tarea: ").append(getTarea()).append(", ");
+        sb.append("Usuario: ").append(getUsuario()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();
     }

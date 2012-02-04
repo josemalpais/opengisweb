@@ -33,38 +33,6 @@ privileged aspect Usuario_Roo_JavaBean {
         this.Apellidos = Apellidos;
     }
     
-    public String Usuario.getEmail() {
-        return this.Email;
-    }
-    
-    public void Usuario.setEmail(String Email) {
-        this.Email = Email;
-    }
-    
-    public String Usuario.getPassword() {
-        return this.Password;
-    }
-    
-    public void Usuario.setPassword(String Password) {
-        this.Password = Password;
-    }
-    
-    public String Usuario.getTipo() {
-        return this.Tipo;
-    }
-    
-    public void Usuario.setTipo(String Tipo) {
-        this.Tipo = Tipo;
-    }
-    
-    public int Usuario.getVeces() {
-        return this.Veces;
-    }
-    
-    public void Usuario.setVeces(int Veces) {
-        this.Veces = Veces;
-    }
-    
     public int Usuario.getTelefono() {
         return this.Telefono;
     }
@@ -105,20 +73,28 @@ privileged aspect Usuario_Roo_JavaBean {
         this.Cp = Cp;
     }
     
+    public String Usuario.getEmail() {
+        return this.Email;
+    }
+    
+    public void Usuario.setEmail(String Email) {
+        this.Email = Email;
+    }
+    
+    public String Usuario.getPassword() {
+        return this.Password;
+    }
+    
+    public void Usuario.setPassword(String Password) {
+        this.Password = Password;
+    }
+    
     public Boolean Usuario.getActivo() {
         return this.Activo;
     }
     
     public void Usuario.setActivo(Boolean Activo) {
         this.Activo = Activo;
-    }
-    
-    public String Usuario.getIdioma() {
-        return this.Idioma;
-    }
-    
-    public void Usuario.setIdioma(String Idioma) {
-        this.Idioma = Idioma;
     }
     
     public Calendar Usuario.getFecha_de_Nacimiento() {

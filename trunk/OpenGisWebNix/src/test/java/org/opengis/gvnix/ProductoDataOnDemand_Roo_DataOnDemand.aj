@@ -13,6 +13,7 @@ import java.util.Random;
 import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import org.opengis.gvnix.Producto;
+import org.opengis.gvnix.Usuario;
 import org.opengis.gvnix.domain.enumerated.Tarea;
 import org.springframework.stereotype.Component;
 
@@ -28,11 +29,11 @@ privileged aspect ProductoDataOnDemand_Roo_DataOnDemand {
         Producto obj = new Producto();
         setActivo(obj, index);
         setDescripcion(obj, index);
-        setDni(obj, index);
         setDosis(obj, index);
         setIdprod(obj, index);
         setNombre(obj, index);
         setNomtarea(obj, index);
+        setUsuario(obj, index);
         return obj;
     }
     
@@ -47,14 +48,6 @@ privileged aspect ProductoDataOnDemand_Roo_DataOnDemand {
             descripcion = descripcion.substring(0, 1000);
         }
         obj.setDescripcion(descripcion);
-    }
-    
-    public void ProductoDataOnDemand.setDni(Producto obj, int index) {
-        String dni = "dni_" + index;
-        if (dni.length() > 9) {
-            dni = dni.substring(0, 9);
-        }
-        obj.setDni(dni);
     }
     
     public void ProductoDataOnDemand.setDosis(Producto obj, int index) {
@@ -78,6 +71,11 @@ privileged aspect ProductoDataOnDemand_Roo_DataOnDemand {
     public void ProductoDataOnDemand.setNomtarea(Producto obj, int index) {
         Tarea nomtarea = Tarea.class.getEnumConstants()[0];
         obj.setNomtarea(nomtarea);
+    }
+    
+    public void ProductoDataOnDemand.setUsuario(Producto obj, int index) {
+        Usuario usuario = null;
+        obj.setUsuario(usuario);
     }
     
     public Producto ProductoDataOnDemand.getSpecificProducto(int index) {

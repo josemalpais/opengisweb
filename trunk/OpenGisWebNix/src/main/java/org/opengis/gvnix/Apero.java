@@ -12,6 +12,8 @@ import org.opengis.gvnix.Usuario;
 import java.util.HashSet;
 import javax.persistence.ManyToMany;
 import javax.persistence.CascadeType;
+import javax.persistence.ManyToOne;
+
 import org.opengis.gvnix.domain.enumerated.Tarea;
 import javax.persistence.Enumerated;
 import javax.persistence.EnumType;
@@ -33,8 +35,9 @@ public class Apero {
     @Size(min = 0, max = 100)
     private String descripcion;
 
-    @ManyToMany(cascade = CascadeType.ALL, mappedBy = "Dni")
-    private Set<Usuario> dni = new HashSet<Usuario>();
+    @NotNull
+    @ManyToOne
+    private Usuario usuario;
 
     @Enumerated(EnumType.STRING)
     private Tarea tarea;

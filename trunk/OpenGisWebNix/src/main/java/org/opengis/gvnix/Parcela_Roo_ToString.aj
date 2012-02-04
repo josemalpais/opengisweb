@@ -11,12 +11,12 @@ privileged aspect Parcela_Roo_ToString {
         StringBuilder sb = new StringBuilder();
         sb.append("Activo: ").append(getActivo()).append(", ");
         sb.append("Alias: ").append(getAlias()).append(", ");
-        sb.append("DniPropietario: ").append(getDniPropietario()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Numero: ").append(getNumero()).append(", ");
         sb.append("Partida: ").append(getPartida()).append(", ");
         sb.append("Poblacion: ").append(getPoblacion()).append(", ");
         sb.append("Poligono: ").append(getPoligono()).append(", ");
+        sb.append("Propietario: ").append(getPropietario()).append(", ");
         sb.append("Provincia: ").append(getProvincia()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();

@@ -3,11 +3,15 @@ package org.opengis.gvnix;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
+
+import javax.validation.constraints.Max;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.Calendar;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
+
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.format.annotation.DateTimeFormat;
 
 @RooJavaBean
@@ -24,23 +28,10 @@ public class Usuario {
     private String Nombre;
 
     @NotNull
-    @Size(max = 50)
+    @Size(max = 30)
     private String Apellidos;
-
-    @NotNull
-    @Size(max = 40)
-    private String Email;
-
-    @NotNull
-    @Size(max = 40)
-    private String Password;
-
-    @NotNull
-    @Size(max = 15)
-    private String Tipo;
-
-    private int Veces;
-
+    
+    @Size(min = 9, max = 9)
     @NotNull
     private int Telefono;
 
@@ -57,16 +48,23 @@ public class Usuario {
     private String Provincia;
 
     @NotNull
+    @Max(99999L)
+    @Size(min = 5, max = 5)
     private int Cp;
 
     @NotNull
-    private Boolean Activo;
+    @Size(max = 30)
+    private String Email;
 
     @NotNull
-    @Size(max = 20)
-    private String Idioma;
+    @Size(max = 10)
+    private String Password;
+
+    @NotNull
+    @Value("True")
+    private Boolean Activo;
 
     @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "M-")
+    @DateTimeFormat(style = "S-")
     private Calendar Fecha_de_Nacimiento;
 }

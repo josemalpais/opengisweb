@@ -5,6 +5,7 @@ package org.opengis.gvnix;
 
 import java.lang.Boolean;
 import java.lang.String;
+import org.opengis.gvnix.Usuario;
 import org.opengis.gvnix.domain.enumerated.Tarea;
 
 privileged aspect Producto_Roo_JavaBean {
@@ -49,12 +50,12 @@ privileged aspect Producto_Roo_JavaBean {
         this.dosis = dosis;
     }
     
-    public String Producto.getDni() {
-        return this.dni;
+    public Usuario Producto.getUsuario() {
+        return this.usuario;
     }
     
-    public void Producto.setDni(String dni) {
-        this.dni = dni;
+    public void Producto.setUsuario(Usuario usuario) {
+        this.usuario = usuario;
     }
     
     public Boolean Producto.getActivo() {

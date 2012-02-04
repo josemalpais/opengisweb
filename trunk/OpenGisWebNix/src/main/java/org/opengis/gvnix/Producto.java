@@ -1,5 +1,6 @@
 package org.opengis.gvnix;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
@@ -8,6 +9,7 @@ import javax.validation.constraints.Size;
 import org.opengis.gvnix.domain.enumerated.Tarea;
 import javax.persistence.Enumerated;
 import javax.persistence.EnumType;
+import javax.persistence.ManyToOne;
 
 @RooJavaBean
 @RooToString
@@ -32,8 +34,9 @@ public class Producto {
     private int dosis;
 
     @NotNull
-    @Size(max = 9)
-    private String dni;
-
+    @ManyToOne
+    private Usuario usuario;
+    
+    @Value("True")
     private Boolean activo;
 }
