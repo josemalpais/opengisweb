@@ -22,6 +22,7 @@ privileged aspect Usuario_Roo_ToString {
         sb.append("Poblacion: ").append(getPoblacion()).append(", ");
         sb.append("Provincia: ").append(getProvincia()).append(", ");
         sb.append("Telefono: ").append(getTelefono()).append(", ");
+        sb.append("Tipo: ").append(getTipo()).append(", ");
         sb.append("Version: ").append(getVersion());
         return sb.toString();
     }

@@ -14,7 +14,7 @@ import javax.validation.ConstraintViolation;
 import javax.validation.ConstraintViolationException;
 import org.opengis.gvnix.Apero;
 import org.opengis.gvnix.Usuario;
-import org.opengis.gvnix.domain.enumerated.Tarea;
+import org.opengis.gvnix.enumerated.Tarea;
 import org.springframework.stereotype.Component;
 
 privileged aspect AperoDataOnDemand_Roo_DataOnDemand {

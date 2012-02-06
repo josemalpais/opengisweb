@@ -6,7 +6,7 @@ package org.opengis.gvnix;
 import java.lang.Integer;
 import java.lang.String;
 import org.opengis.gvnix.Usuario;
-import org.opengis.gvnix.domain.enumerated.Tarea;
+import org.opengis.gvnix.enumerated.Tarea;
 
 privileged aspect Apero_Roo_JavaBean {
     

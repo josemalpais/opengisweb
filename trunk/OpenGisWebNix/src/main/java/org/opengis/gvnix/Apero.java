@@ -7,14 +7,12 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Max;
-import java.util.Set;
 import org.opengis.gvnix.Usuario;
-import java.util.HashSet;
-import javax.persistence.ManyToMany;
-import javax.persistence.CascadeType;
+
 import javax.persistence.ManyToOne;
 
-import org.opengis.gvnix.domain.enumerated.Tarea;
+import org.opengis.gvnix.enumerated.Tarea;
+
 import javax.persistence.Enumerated;
 import javax.persistence.EnumType;
 

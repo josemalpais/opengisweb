@@ -1,4 +1,4 @@
-package org.opengis.gvnix.domain.enumerated;
+package org.opengis.gvnix.enumerated;
 
 
 public enum Tarea {

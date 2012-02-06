@@ -6,6 +6,7 @@ package org.opengis.gvnix;
 import java.lang.Boolean;
 import java.lang.String;
 import java.util.Calendar;
+import org.opengis.gvnix.enumerated.TipoUser;
 
 privileged aspect Usuario_Roo_JavaBean {
     
@@ -103,6 +104,14 @@ privileged aspect Usuario_Roo_JavaBean {
     
     public void Usuario.setFecha_de_Nacimiento(Calendar Fecha_de_Nacimiento) {
         this.Fecha_de_Nacimiento = Fecha_de_Nacimiento;
+    }
+    
+    public TipoUser Usuario.getTipo() {
+        return this.Tipo;
+    }
+    
+    public void Usuario.setTipo(TipoUser Tipo) {
+        this.Tipo = Tipo;
     }
     
 }

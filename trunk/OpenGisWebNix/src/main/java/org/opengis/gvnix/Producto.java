@@ -6,7 +6,9 @@ import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import org.opengis.gvnix.domain.enumerated.Tarea;
+
+import org.opengis.gvnix.enumerated.Tarea;
+
 import javax.persistence.Enumerated;
 import javax.persistence.EnumType;
 import javax.persistence.ManyToOne;
