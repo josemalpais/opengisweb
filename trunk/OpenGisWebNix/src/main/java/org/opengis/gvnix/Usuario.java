@@ -65,7 +65,7 @@ public class Usuario {
 
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "S-")
-    private Calendar Fecha_de_Nacimiento;
+    private Calendar FechaDeNacimiento;
 
     @Enumerated(EnumType.STRING)
     private TipoUser Tipo;

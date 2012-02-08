@@ -98,12 +98,12 @@ privileged aspect Usuario_Roo_JavaBean {
         this.Activo = Activo;
     }
     
-    public Calendar Usuario.getFecha_de_Nacimiento() {
-        return this.Fecha_de_Nacimiento;
+    public Calendar Usuario.getFechaDeNacimiento() {
+        return this.FechaDeNacimiento;
     }
     
-    public void Usuario.setFecha_de_Nacimiento(Calendar Fecha_de_Nacimiento) {
-        this.Fecha_de_Nacimiento = Fecha_de_Nacimiento;
+    public void Usuario.setFechaDeNacimiento(Calendar FechaDeNacimiento) {
+        this.FechaDeNacimiento = FechaDeNacimiento;
     }
     
     public TipoUser Usuario.getTipo() {

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_opengis_gvnix_Apero" items="${aperoes}" z="lCTyEhugbLfX5hFGO6PtMHA0GVk=">
+        <table:table data="${aperoes}" id="l_org_opengis_gvnix_Apero" path="/aperoes" z="T65oCZfy+uorsMFnekXQasdppTk=">
+            <table:column id="c_org_opengis_gvnix_Apero_nombre" property="nombre" z="wpj5jNNKMlcfOWDHKqFII6zIO3Q="/>
+            <table:column id="c_org_opengis_gvnix_Apero_tamanyo" property="tamanyo" z="SvOa3ScrGo9NKzAAnjEM4TNLBV8="/>
+            <table:column id="c_org_opengis_gvnix_Apero_descripcion" property="descripcion" z="pvl6X/5xdMWlnaXAEit8U/q5+24="/>
+            <table:column id="c_org_opengis_gvnix_Apero_usuario" property="usuario" z="NKyELW1+YGQcj7XuRkwzxp/4aG4="/>
+            <table:column id="c_org_opengis_gvnix_Apero_tarea" property="tarea" z="eFu7BTb515iauI8Yc9Sc0y8k1DU="/>
+        </table:table>
+    </page:list>
+</div>

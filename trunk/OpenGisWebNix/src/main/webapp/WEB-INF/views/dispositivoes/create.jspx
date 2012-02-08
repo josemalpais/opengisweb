@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:c="http://java.sun.com/jsp/jstl/core" xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:spring="http://www.springframework.org/tags" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:create id="fc_org_opengis_gvnix_Dispositivo" modelAttribute="dispositivo" path="/dispositivoes" render="${empty dependencies}" z="l/mydR/r+telNL0NlOxStV0AVhg=">
+        <field:input field="modelo" id="c_org_opengis_gvnix_Dispositivo_modelo" required="true" z="IikB2QfMDLmvmwQb0yq70rxJCpU="/>
+        <field:input field="numserie" id="c_org_opengis_gvnix_Dispositivo_numserie" max="20" required="true" z="8T9z42v0RHk9Jy21skCkIcnfsuI="/>
+        <field:checkbox field="disponible" id="c_org_opengis_gvnix_Dispositivo_disponible" z="5bqSL6WayBlefCdmiS2TZFkMbaI="/>
+        <field:checkbox field="activo" id="c_org_opengis_gvnix_Dispositivo_activo" z="o2h4yNFyLMN03soEm8CAfSbeJKw="/>
+    </form:create>
+    <form:dependency dependencies="${dependencies}" id="d_org_opengis_gvnix_Dispositivo" render="${not empty dependencies}" z="iOGwQ3u2xa1qTLH82Cw4lz44Vjw="/>
+</div>

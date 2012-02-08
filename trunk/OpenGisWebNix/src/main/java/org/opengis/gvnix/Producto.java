@@ -22,11 +22,11 @@ public class Producto {
     private int idprod;
 
     @NotNull
-    @Size(max = 40)
+    @Size(max = 25)
     private String nombre;
 
     @NotNull
-    @Size(max = 1000)
+    @Size(max = 140)
     private String descripcion;
 
     @Enumerated(EnumType.STRING)

@@ -1,5 +1,6 @@
 package org.opengis.gvnix;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.roo.addon.entity.RooEntity;
 import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
@@ -19,8 +20,10 @@ public class Dispositivo {
     @Size(max = 20)
     private String numserie;
 
+    @Value("True")
     private Boolean disponible;
-
+    
+    @Value("True")
     private Boolean activo;
     
     public static List<Dispositivo> findAvaiableDevices() {

@@ -15,7 +15,7 @@ privileged aspect Usuario_Roo_ToString {
         sb.append("Direccion: ").append(getDireccion()).append(", ");
         sb.append("Dni: ").append(getDni()).append(", ");
         sb.append("Email: ").append(getEmail()).append(", ");
-        sb.append("Fecha_de_Nacimiento: ").append(getFecha_de_Nacimiento() == null ? "null" : getFecha_de_Nacimiento().getTime()).append(", ");
+        sb.append("FechaDeNacimiento: ").append(getFechaDeNacimiento() == null ? "null" : getFechaDeNacimiento().getTime()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");
         sb.append("Nombre: ").append(getNombre()).append(", ");
         sb.append("Password: ").append(getPassword()).append(", ");

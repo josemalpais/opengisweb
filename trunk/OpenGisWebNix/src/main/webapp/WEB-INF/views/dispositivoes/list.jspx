@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_org_opengis_gvnix_Dispositivo" items="${dispositivoes}" z="8sLKdv6RwJQk2mQz4yafFSXyALQ=">
+        <table:table data="${dispositivoes}" id="l_org_opengis_gvnix_Dispositivo" path="/dispositivoes" z="5Ct/SIgeN+JUKFELJMdF4fax4Dc=">
+            <table:column id="c_org_opengis_gvnix_Dispositivo_modelo" property="modelo" z="Z/eTJGRTwzVJ5M2EjE5VG6dw/N8="/>
+            <table:column id="c_org_opengis_gvnix_Dispositivo_numserie" property="numserie" z="jQD90qrVtNVTBC6vLMhAKnaFxd0="/>
+            <table:column id="c_org_opengis_gvnix_Dispositivo_disponible" property="disponible" z="B8dEIEmzAfaGHI7XKivy/GEk640="/>
+            <table:column id="c_org_opengis_gvnix_Dispositivo_activo" property="activo" z="6xJDFckjp0vL9yC7D3qwOkUS7lc="/>
+        </table:table>
+    </page:list>
+</div>

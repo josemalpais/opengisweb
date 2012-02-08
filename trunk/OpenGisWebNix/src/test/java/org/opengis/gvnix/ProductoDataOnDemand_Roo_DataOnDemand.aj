@@ -44,8 +44,8 @@ privileged aspect ProductoDataOnDemand_Roo_DataOnDemand {
     
     public void ProductoDataOnDemand.setDescripcion(Producto obj, int index) {
         String descripcion = "descripcion_" + index;
-        if (descripcion.length() > 1000) {
-            descripcion = descripcion.substring(0, 1000);
+        if (descripcion.length() > 140) {
+            descripcion = descripcion.substring(0, 140);
         }
         obj.setDescripcion(descripcion);
     }
@@ -62,8 +62,8 @@ privileged aspect ProductoDataOnDemand_Roo_DataOnDemand {
     
     public void ProductoDataOnDemand.setNombre(Producto obj, int index) {
         String nombre = "nombre_" + index;
-        if (nombre.length() > 40) {
-            nombre = nombre.substring(0, 40);
+        if (nombre.length() > 25) {
+            nombre = nombre.substring(0, 25);
         }
         obj.setNombre(nombre);
     }

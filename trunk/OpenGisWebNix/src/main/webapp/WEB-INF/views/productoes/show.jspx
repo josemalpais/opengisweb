@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_org_opengis_gvnix_Producto" object="${producto}" path="/productoes" z="Ed4OEOwKayJQpacOt/2Zrq8/AtA=">
+        <field:display field="idprod" id="s_org_opengis_gvnix_Producto_idprod" object="${producto}" z="0HzeRw6FZG+lKk/Na2M6GQvQDUo="/>
+        <field:display field="nombre" id="s_org_opengis_gvnix_Producto_nombre" object="${producto}" z="rrB4YUUs+8I9XX4Z+w9RrRIorrE="/>
+        <field:display field="descripcion" id="s_org_opengis_gvnix_Producto_descripcion" object="${producto}" z="13T+dKoAV8NGb8kr89e3nBDVJy8="/>
+        <field:display field="nomtarea" id="s_org_opengis_gvnix_Producto_nomtarea" object="${producto}" z="oI7Tg4MBqqUIXUmQ+d3y+z/pZmc="/>
+        <field:display field="dosis" id="s_org_opengis_gvnix_Producto_dosis" object="${producto}" z="sPoeh/rq5UINNcBHypojCK7ij1I="/>
+        <field:display field="usuario" id="s_org_opengis_gvnix_Producto_usuario" object="${producto}" z="gongaysLjKyqTBCU6SoWx9gN3Pw="/>
+        <field:display field="activo" id="s_org_opengis_gvnix_Producto_activo" object="${producto}" z="mvsxVAoNBOoi/rp/tIwtgHwaBDI="/>
+    </page:show>
+</div>

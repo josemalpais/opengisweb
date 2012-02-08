@@ -9,7 +9,6 @@ privileged aspect Prestamo_Roo_ToString {
     
     public String Prestamo.toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append("Disponible: ").append(getDisponible()).append(", ");
         sb.append("Dispositivo: ").append(getDispositivo()).append(", ");
         sb.append("Fin: ").append(getFin() == null ? "null" : getFin().getTime()).append(", ");
         sb.append("Id: ").append(getId()).append(", ");

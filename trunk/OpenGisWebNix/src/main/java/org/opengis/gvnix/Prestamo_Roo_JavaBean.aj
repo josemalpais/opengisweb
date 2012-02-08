@@ -3,7 +3,6 @@
 
 package org.opengis.gvnix;
 
-import java.lang.Boolean;
 import java.util.Calendar;
 import org.opengis.gvnix.Dispositivo;
 import org.opengis.gvnix.Usuario;
@@ -40,14 +39,6 @@ privileged aspect Prestamo_Roo_JavaBean {
     
     public void Prestamo.setFin(Calendar Fin) {
         this.Fin = Fin;
-    }
-    
-    public Boolean Prestamo.getDisponible() {
-        return this.disponible;
-    }
-    
-    public void Prestamo.setDisponible(Boolean disponible) {
-        this.disponible = disponible;
     }
     
 }
