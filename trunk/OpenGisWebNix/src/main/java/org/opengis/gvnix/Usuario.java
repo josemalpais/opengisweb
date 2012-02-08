@@ -32,7 +32,6 @@ public class Usuario {
     @Size(max = 30)
     private String Apellidos;
 
-    @Size(min = 9, max = 9)
     @NotNull
     private int Telefono;
 
@@ -50,7 +49,6 @@ public class Usuario {
 
     @NotNull
     @Max(99999L)
-    @Size(min = 5, max = 5)
     private int Cp;
 
     @NotNull
