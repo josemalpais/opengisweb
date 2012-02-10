@@ -53,4 +53,13 @@ privileged aspect Parcela_Roo_Finder {
         return q;
     }
     
+    public static TypedQuery<Parcela> Parcela.findParcelasByProvinciaAndPoblacionAndNumero(int provincia, int poblacion, int numero) {
+        EntityManager em = Parcela.entityManager();
+        TypedQuery<Parcela> q = em.createQuery("SELECT o FROM Parcela AS o WHERE o.provincia = :provincia AND o.poblacion = :poblacion AND o.numero = :numero", Parcela.class);
+        q.setParameter("provincia", provincia);
+        q.setParameter("poblacion", poblacion);
+        q.setParameter("numero", numero);
+        return q;
+    }
+    
 }

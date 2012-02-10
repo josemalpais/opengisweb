@@ -11,7 +11,7 @@ import javax.persistence.ManyToOne;
 
 @RooJavaBean
 @RooToString
-@RooEntity(identifierColumn = "idParcela", finders = { "findParcelasByProvincia", "findParcelasByPoblacion", "findParcelasByPoligono", "findParcelasByNumero", "findParcelasByPartida", "findParcelasByPropietario" })
+@RooEntity(identifierColumn = "idParcela", finders = { "findParcelasByProvincia", "findParcelasByPoblacion", "findParcelasByPoligono", "findParcelasByNumero", "findParcelasByPartida", "findParcelasByPropietario", "findParcelasByProvinciaAndPoblacionAndNumero" })
 public class Parcela {
 
     @NotNull

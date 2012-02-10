@@ -80,4 +80,15 @@ privileged aspect ParcelaController_Roo_Controller_Finder {
         return "parcelas/list";
     }
     
+    @RequestMapping(params = { "find=ByProvinciaAndPoblacionAndNumero", "form" }, method = RequestMethod.GET)
+    public String ParcelaController.findParcelasByProvinciaAndPoblacionAndNumeroForm(Model uiModel) {
+        return "parcelas/findParcelasByProvinciaAndPoblacionAndNumero";
+    }
+    
+    @RequestMapping(params = "find=ByProvinciaAndPoblacionAndNumero", method = RequestMethod.GET)
+    public String ParcelaController.findParcelasByProvinciaAndPoblacionAndNumero(@RequestParam("provincia") int provincia, @RequestParam("poblacion") int poblacion, @RequestParam("numero") int numero, Model uiModel) {
+        uiModel.addAttribute("parcelas", Parcela.findParcelasByProvinciaAndPoblacionAndNumero(provincia, poblacion, numero).getResultList());
+        return "parcelas/list";
+    }
+    
 }

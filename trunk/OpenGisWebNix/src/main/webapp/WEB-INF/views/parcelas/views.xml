@@ -31,4 +31,7 @@
 <definition extends="default" name="parcelas/findParcelasByPropietario">
         <put-attribute name="body" value="/WEB-INF/views/parcelas/findParcelasByPropietario.jspx"/>
     </definition>
+<definition extends="default" name="parcelas/findParcelasByProvinciaAndPoblacionAndNumero">
+        <put-attribute name="body" value="/WEB-INF/views/parcelas/findParcelasByProvinciaAndPoblacionAndNumero.jspx"/>
+    </definition>
 </tiles-definitions>
