@@ -13,4 +13,22 @@
 <definition extends="default" name="parcelas/update">
         <put-attribute name="body" value="/WEB-INF/views/parcelas/update.jspx"/>
     </definition>
+<definition extends="default" name="parcelas/findParcelasByProvincia">
+        <put-attribute name="body" value="/WEB-INF/views/parcelas/findParcelasByProvincia.jspx"/>
+    </definition>
+<definition extends="default" name="parcelas/findParcelasByPoblacion">
+        <put-attribute name="body" value="/WEB-INF/views/parcelas/findParcelasByPoblacion.jspx"/>
+    </definition>
+<definition extends="default" name="parcelas/findParcelasByPoligono">
+        <put-attribute name="body" value="/WEB-INF/views/parcelas/findParcelasByPoligono.jspx"/>
+    </definition>
+<definition extends="default" name="parcelas/findParcelasByNumero">
+        <put-attribute name="body" value="/WEB-INF/views/parcelas/findParcelasByNumero.jspx"/>
+    </definition>
+<definition extends="default" name="parcelas/findParcelasByPartida">
+        <put-attribute name="body" value="/WEB-INF/views/parcelas/findParcelasByPartida.jspx"/>
+    </definition>
+<definition extends="default" name="parcelas/findParcelasByPropietario">
+        <put-attribute name="body" value="/WEB-INF/views/parcelas/findParcelasByPropietario.jspx"/>
+    </definition>
 </tiles-definitions>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:find finderName="ByNombreLikeOrDniLike" id="ff_org_opengis_gvnix_Usuario" path="/usuarios" z="V1smhoi1ws0zUpJBjLO2xJu4kok=">
+        <field:input disableFormBinding="true" field="Nombre" id="f_org_opengis_gvnix_Usuario_Nombre" max="30" required="false" z="mbz1Y77uhrX9VwGxoYKJlq/y/XM="/>
+        <field:input disableFormBinding="true" field="Dni" id="f_org_opengis_gvnix_Usuario_Dni" max="9" required="false" z="DP8V62YjcFAnY2DzFGG31gr1/Js="/>
+    </form:find>
+</div>

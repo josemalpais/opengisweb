@@ -6,16 +6,14 @@ import org.springframework.roo.addon.javabean.RooJavaBean;
 import org.springframework.roo.addon.tostring.RooToString;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-
 import org.opengis.gvnix.enumerated.Tarea;
-
 import javax.persistence.Enumerated;
 import javax.persistence.EnumType;
 import javax.persistence.ManyToOne;
 
 @RooJavaBean
 @RooToString
-@RooEntity
+@RooEntity(finders = { "findProductoesByUsuario", "findProductoesByNombreLike", "findProductoesByNomtarea" })
 public class Producto {
 
     @NotNull
@@ -38,7 +36,7 @@ public class Producto {
     @NotNull
     @ManyToOne
     private Usuario usuario;
-    
+
     @Value("True")
     private Boolean activo;
 }

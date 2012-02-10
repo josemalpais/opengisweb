@@ -13,4 +13,13 @@
 <definition extends="default" name="productoes/update">
         <put-attribute name="body" value="/WEB-INF/views/productoes/update.jspx"/>
     </definition>
+<definition extends="default" name="productoes/findProductoesByUsuario">
+        <put-attribute name="body" value="/WEB-INF/views/productoes/findProductoesByUsuario.jspx"/>
+    </definition>
+<definition extends="default" name="productoes/findProductoesByNombreLike">
+        <put-attribute name="body" value="/WEB-INF/views/productoes/findProductoesByNombreLike.jspx"/>
+    </definition>
+<definition extends="default" name="productoes/findProductoesByNomtarea">
+        <put-attribute name="body" value="/WEB-INF/views/productoes/findProductoesByNomtarea.jspx"/>
+    </definition>
 </tiles-definitions>

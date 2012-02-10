@@ -8,17 +8,14 @@ import javax.validation.constraints.Size;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.Max;
 import org.opengis.gvnix.Usuario;
-
 import javax.persistence.ManyToOne;
-
 import org.opengis.gvnix.enumerated.Tarea;
-
 import javax.persistence.Enumerated;
 import javax.persistence.EnumType;
 
 @RooJavaBean
 @RooToString
-@RooEntity(identifierColumn = "idapero", identifierType = Integer.class)
+@RooEntity(identifierColumn = "idapero", identifierType = Integer.class, finders = { "findAperoesByUsuario", "findAperoesByNombreLike", "findAperoesByTarea" })
 public class Apero {
 
     @NotNull

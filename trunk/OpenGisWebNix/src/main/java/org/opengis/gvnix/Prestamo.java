@@ -14,7 +14,7 @@ import org.springframework.format.annotation.DateTimeFormat;
 
 @RooJavaBean
 @RooToString
-@RooEntity
+@RooEntity(finders = { "findPrestamoesByDispositivo", "findPrestamoesByUsuario" })
 public class Prestamo {
 
     @NotNull
@@ -24,7 +24,7 @@ public class Prestamo {
     @NotNull
     @ManyToOne
     private Dispositivo dispositivo;
-    
+
     @NotNull
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "S-")
@@ -33,5 +33,4 @@ public class Prestamo {
     @Temporal(TemporalType.TIMESTAMP)
     @DateTimeFormat(style = "S-")
     private Calendar Fin;
-    
 }
