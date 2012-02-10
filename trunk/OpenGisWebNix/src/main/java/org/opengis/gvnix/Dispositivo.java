@@ -10,7 +10,7 @@ import java.util.List;
 
 @RooJavaBean
 @RooToString
-@RooEntity(identifierColumn = "idDispositivo")
+@RooEntity(identifierColumn = "idDispositivo", finders = { "findDispositivoesByModeloLike" })
 public class Dispositivo {
 
     @NotNull
@@ -22,10 +22,10 @@ public class Dispositivo {
 
     @Value("True")
     private Boolean disponible;
-    
+
     @Value("True")
     private Boolean activo;
-    
+
     public static List<Dispositivo> findAvaiableDevices() {
         return entityManager().createQuery("SELECT o FROM Dispositivo o WHERE disponible = '1' and activo = '1'", Dispositivo.class).getResultList();
     }

@@ -10,6 +10,7 @@
         <menu:category id="c_dispositivo" z="LmhAm25b/cuzruqeC85Hz8M6vPY=">
             <menu:item id="i_dispositivo_new" messageCode="global_menu_new" url="/dispositivoes?form" z="us6cPxOqWjUNP9WZvqTt0h7r8+Q="/>
             <menu:item id="i_dispositivo_list" messageCode="global_menu_list" url="/dispositivoes?page=1&amp;size=${empty param.size ? 10 : param.size}" z="+ooT/y09Pf/VNW1Yoj9OiADF/p8="/>
+            <menu:item id="fi_dispositivo_modelolike" messageCode="global_menu_find" url="/dispositivoes?find=ByModeloLike&amp;form" z="hm5b1386NwuMCNmpNItNoa9663Y="/>
         </menu:category>
         <menu:category id="c_prestamo" z="dSpdXMOw/CMn2DdACyW5eg05lSI=">
             <menu:item id="i_prestamo_new" messageCode="global_menu_new" url="/prestamoes?form" z="4OLf3bBvqHay3tZWvMNhOaZUgoA="/>
