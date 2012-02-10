@@ -31,6 +31,10 @@ public class Usuario {
     @NotNull
     @Size(max = 30)
     private String Apellidos;
+    
+    @Temporal(TemporalType.TIMESTAMP)
+    @DateTimeFormat(style = "S-")
+    private Calendar FechaDeNacimiento;
 
     @NotNull
     private int Telefono;
@@ -59,14 +63,14 @@ public class Usuario {
     @Size(max = 10)
     private String Password;
 
-    @NotNull
-    @Value("True")
-    private Boolean Activo;
+    
 
-    @Temporal(TemporalType.TIMESTAMP)
-    @DateTimeFormat(style = "S-")
-    private Calendar FechaDeNacimiento;
+    
 
     @Enumerated(EnumType.STRING)
     private TipoUser Tipo;
+    
+    @NotNull
+    @Value("True")
+    private Boolean Activo;
 }

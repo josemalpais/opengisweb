@@ -34,6 +34,14 @@ privileged aspect Usuario_Roo_JavaBean {
         this.Apellidos = Apellidos;
     }
     
+    public Calendar Usuario.getFechaDeNacimiento() {
+        return this.FechaDeNacimiento;
+    }
+    
+    public void Usuario.setFechaDeNacimiento(Calendar FechaDeNacimiento) {
+        this.FechaDeNacimiento = FechaDeNacimiento;
+    }
+    
     public int Usuario.getTelefono() {
         return this.Telefono;
     }
@@ -90,28 +98,20 @@ privileged aspect Usuario_Roo_JavaBean {
         this.Password = Password;
     }
     
-    public Boolean Usuario.getActivo() {
-        return this.Activo;
-    }
-    
-    public void Usuario.setActivo(Boolean Activo) {
-        this.Activo = Activo;
-    }
-    
-    public Calendar Usuario.getFechaDeNacimiento() {
-        return this.FechaDeNacimiento;
-    }
-    
-    public void Usuario.setFechaDeNacimiento(Calendar FechaDeNacimiento) {
-        this.FechaDeNacimiento = FechaDeNacimiento;
-    }
-    
     public TipoUser Usuario.getTipo() {
         return this.Tipo;
     }
     
     public void Usuario.setTipo(TipoUser Tipo) {
         this.Tipo = Tipo;
+    }
+    
+    public Boolean Usuario.getActivo() {
+        return this.Activo;
+    }
+    
+    public void Usuario.setActivo(Boolean Activo) {
+        this.Activo = Activo;
     }
     
 }

@@ -66,7 +66,7 @@ privileged aspect ApplicationConversionServiceFactoryBean_Roo_ConversionService 
     
     static class org.opengis.gvnix.web.ApplicationConversionServiceFactoryBean.UsuarioConverter implements Converter<Usuario, String> {
         public String convert(Usuario usuario) {
-            return new StringBuilder().append(usuario.getDni()).append(" ").append(usuario.getNombre()).append(" ").append(usuario.getApellidos()).append(" ").append(usuario.getTelefono()).toString();
+            return new StringBuilder().append(usuario.getDni()).append(" ").append(usuario.getNombre()).append(" ").append(usuario.getApellidos()).append(" ").append(usuario.getFechaDeNacimiento()).toString();
         }
         
     }
