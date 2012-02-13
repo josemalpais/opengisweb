@@ -89,7 +89,7 @@ public abstract class Usuario implements Validator {
     
     }
     
-	private void validarFormatoDni (String Dni, Errors errors) {
+	private static boolean validarFormatoDni (String Dni, Errors errors) {
         
 		// TODO Auto-generated method stub
 		
@@ -105,9 +105,9 @@ public abstract class Usuario implements Validator {
 					"Hola"); //$NON-NLS-1$
 
 			valido = false;
-			//return errors;
+			return errors != null;
 		} else {
-			for (int x = 0; x < 8; x++) {// este for nos cojera los 8 primeros
+			for (int x = 0; x < 8; x++) {	// este for nos cojera los 8 primeros
 											// carácteres y los guardará en el
 											// string aux
 				aux = aux + Dni.charAt(x);
@@ -120,7 +120,7 @@ public abstract class Usuario implements Validator {
 				JOptionPane.showMessageDialog(null,
 						"Hola"); //$NON-NLS-1$
 				valido = false;
-				//return errors;
+				return errors != null;
 			}
 			pletra = pletra % 23;
 			aux2 = Dni.charAt(Dni.length() - 1) + ""; //$NON-NLS-1$
@@ -128,12 +128,12 @@ public abstract class Usuario implements Validator {
 			if (arrayLetra[pletra].equalsIgnoreCase(aux2)) {
 				Dni = aux + arrayLetra[pletra];// lo colocamos en formato de 9
 												// carácteres
-				//return true;
+				return true;
 			} else {
 				JOptionPane.showMessageDialog(null,
 						"Hola"); //$NON-NLS-1$
 				valido = false;
-				//return errors;
+				return errors != null;
 			}
 		}
     
