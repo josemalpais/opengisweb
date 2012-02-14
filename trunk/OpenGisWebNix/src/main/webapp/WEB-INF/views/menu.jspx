@@ -47,7 +47,7 @@
             <menu:item id="fi_parcela_numero" messageCode="global_menu_find" url="/parcelas?find=ByNumero&amp;form" z="ePjcElf2X7AjAlyASbZy6P90NSU="/>
             <menu:item id="fi_parcela_partida" messageCode="global_menu_find" url="/parcelas?find=ByPartida&amp;form" z="8kux2gVViCZrlLl8wP5QGgFsiLg="/>
             <menu:item id="fi_parcela_propietario" messageCode="global_menu_find" url="/parcelas?find=ByPropietario&amp;form" z="B/K+25EkQzQ8TNKTRVN0dBVBuR4="/>
-            <menu:item id="fi_parcela_provinciaandpoblacionandnumero" messageCode="global_menu_find" url="/parcelas?find=ByProvinciaAndPoblacionAndNumero&amp;form" z="Ter5Lxrlc+eUr0MiTLBR2NRBvw4="/>
+            <menu:item id="fi_parcela_provinciaandpoblacionandpoligonoandnumero" messageCode="global_menu_find" url="/parcelas?find=ByProvinciaAndPoblacionAndPoligonoAndNumero&amp;form" z="AZ+nHwtB65ZbYooCX7jPGYJwTew="/>
         </menu:category>
     </menu:menu>
 </div>

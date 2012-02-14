@@ -17,8 +17,8 @@
     <util:panel id="${id}" title="${title_msg}" openPane="${openPane}">
       <spring:url value="${path}" var="form_url" />
       
-      <form:form action="http://sigpac.mapa.es/" method="GET">
-        <input type="hidden" name="find" value="${fn:escapeXml(finderName)}" />
+      <form:form action="http://sigpac.mapa.es/fega/salidasgraficas/AspPrintLotProvider.aspx" method="GET">
+        <input type="hidden" name="layer" value="" />
         <jsp:doBody />
         <div class="submit" id="${fn:escapeXml(id)}_${fn:escapeXml(finderName)}_submit">
           <spring:message code="button_find" var="find_button" htmlEscape="false" />

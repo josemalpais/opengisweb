@@ -34,4 +34,7 @@
 <definition extends="default" name="parcelas/findParcelasByProvinciaAndPoblacionAndNumero">
         <put-attribute name="body" value="/WEB-INF/views/parcelas/findParcelasByProvinciaAndPoblacionAndNumero.jspx"/>
     </definition>
+<definition extends="default" name="parcelas/findParcelasByProvinciaAndPoblacionAndPoligonoAndNumero">
+        <put-attribute name="body" value="/WEB-INF/views/parcelas/findParcelasByProvinciaAndPoblacionAndPoligonoAndNumero.jspx"/>
+    </definition>
 </tiles-definitions>
