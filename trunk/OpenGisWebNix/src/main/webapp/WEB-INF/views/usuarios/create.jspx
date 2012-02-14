@@ -3,7 +3,7 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_org_opengis_gvnix_Usuario" modelAttribute="usuario" path="/usuarios" render="${empty dependencies}" z="8RS1qX7XbdRHWJGW7P3oMCBzzcM=">
-        <field:input field="Dni" id="c_org_opengis_gvnix_Usuario_Dni" max="9" required="true" z="yxX9M6C0WhaoPNRolBjadQ1HHSk="/>
+        <field:input field="Dni" id="c_org_opengis_gvnix_Usuario_Dni" max="9" required="true" validationRegex="[0-9]{8}[A-Za-z]" z="yxX9M6C0WhaoPNRolBjadQ1HHSk="/>
         <field:input field="Nombre" id="c_org_opengis_gvnix_Usuario_Nombre" max="30" required="true" z="i3/poWELVY8LoQurXLE9EmVzy8Q="/>
         <field:input field="Apellidos" id="c_org_opengis_gvnix_Usuario_Apellidos" max="30" required="true" z="ACobqpWtDm5yzTbtT7nZNn97nmQ="/>
         <field:input field="Telefono" id="c_org_opengis_gvnix_Usuario_Telefono" required="true" z="m4mJqyqh6MfzvJvQD3krd9GrTaE="/>
