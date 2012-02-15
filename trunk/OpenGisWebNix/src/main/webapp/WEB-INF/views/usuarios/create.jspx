@@ -3,15 +3,15 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:create id="fc_org_opengis_gvnix_Usuario" modelAttribute="usuario" path="/usuarios" render="${empty dependencies}" z="8RS1qX7XbdRHWJGW7P3oMCBzzcM=">
-        <field:input field="Dni" id="c_org_opengis_gvnix_Usuario_Dni" max="9"  required="true" validationRegex="[0-9]{8}[A-Za-z]" z="yxX9M6C0WhaoPNRolBjadQ1HHSk="/>
+        <field:input field="Dni" id="c_org_opengis_gvnix_Usuario_Dni" max="9" required="true" validationRegex="[0-9]{8}[A-Za-z]" z="user-managed"/>
         <field:input field="Nombre" id="c_org_opengis_gvnix_Usuario_Nombre" max="30" required="true" z="i3/poWELVY8LoQurXLE9EmVzy8Q="/>
         <field:input field="Apellidos" id="c_org_opengis_gvnix_Usuario_Apellidos" max="30" required="true" z="ACobqpWtDm5yzTbtT7nZNn97nmQ="/>
-        <field:input field="Telefono" id="c_org_opengis_gvnix_Usuario_Telefono"  required="true" validationRegex="[0-9]+$" z="m4mJqyqh6MfzvJvQD3krd9GrTaE="/>
+        <field:input field="Telefono" id="c_org_opengis_gvnix_Usuario_Telefono" required="true" validationRegex="[0-9]+$" z="user-managed"/>
         <field:input field="Direccion" id="c_org_opengis_gvnix_Usuario_Direccion" max="30" required="true" z="vm2selK+2auHC2iPmFkuix1cbRw="/>
         <field:input field="Poblacion" id="c_org_opengis_gvnix_Usuario_Poblacion" max="30" required="true" z="qwajD1nSZ9sXd/qKIvRGxfSgxJk="/>
         <field:input field="Provincia" id="c_org_opengis_gvnix_Usuario_Provincia" max="20" required="true" z="4WM83f5k7i8aIcrDWC3fj91igI0="/>
-        <field:input field="Cp" id="c_org_opengis_gvnix_Usuario_Cp" max="99999" required="true" validationRegex="[0-9]{5}" z="H4xAxp4GmqqGzDEijcaAZkf6m+g="/>
-        <field:input field="Email" id="c_org_opengis_gvnix_Usuario_Email" max="30" required="true" validationMessageCode="field_invalid_email" z="ZPHmDU22G4255EUcxhHBa9jCIVk="/>
+        <field:input field="Cp" id="c_org_opengis_gvnix_Usuario_Cp" max="99999" required="true" validationRegex="[0-9]{5}" z="user-managed"/>
+        <field:input field="Email" id="c_org_opengis_gvnix_Usuario_Email" max="25" required="true" validationMessageCode="field_invalid_email" z="V0SUOizTTxIA7I1K61ZIbRMTmKU="/>
         <field:input field="Password" id="c_org_opengis_gvnix_Usuario_Password" max="10" required="true" z="hh6BNF0a62u/+HnMf9mQb7G+gbM="/>
         <field:checkbox field="Activo" id="c_org_opengis_gvnix_Usuario_Activo" z="5mURKIEnCL5Od3nxChacGlTjqps="/>
         <field:select field="Tipo" id="c_org_opengis_gvnix_Usuario_Tipo" items="${tipousers}" path="tipousers" z="8lEvRnZ9xrbfBSDHmKM0G5f6Ne0="/>

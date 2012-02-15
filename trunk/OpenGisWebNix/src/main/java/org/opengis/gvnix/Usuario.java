@@ -7,6 +7,7 @@ import org.springframework.roo.addon.tostring.RooToString;
 
 import javax.validation.constraints.Max;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.util.Calendar;
 import javax.persistence.Temporal;
@@ -25,6 +26,7 @@ public class Usuario{
 
     @NotNull
     @Size(max = 9)
+    @Pattern(regexp = "[0-9]{8}[A-Za-z]")
     private String Dni;
 
     @NotNull

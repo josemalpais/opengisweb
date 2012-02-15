@@ -3,6 +3,6 @@
     <jsp:directive.page contentType="text/html;charset=UTF-8"/>
     <jsp:output omit-xml-declaration="yes"/>
     <form:find finderName="ByEmailLike" id="ff_org_opengis_gvnix_Usuario" path="/usuarios" z="GgNUgw+LlA7+hfxHHbx8Ex1+ZBc=">
-        <field:input disableFormBinding="true" field="Email" id="f_org_opengis_gvnix_Usuario_Email" max="30" required="true" validationMessageCode="field_invalid_email" z="EWjxHeaI4sbjyn4z5Wd6JZlxMQU="/>
+        <field:input disableFormBinding="true" field="Email" id="f_org_opengis_gvnix_Usuario_Email" max="25" required="true" validationMessageCode="field_invalid_email" z="RfGMm1h/9bW8cOOBABdnFs1Aq1s="/>
     </form:find>
 </div>
