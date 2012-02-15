@@ -42,6 +42,7 @@ public class Usuario{
     private Calendar FechaDeNacimiento;
 
     @NotNull
+    @Pattern(regexp = "[0-9]+$")
     private int Telefono;
 
     @NotNull
@@ -58,6 +59,7 @@ public class Usuario{
 
     @NotNull
     @Max(99999L)
+    @Pattern(regexp = "[0-9]{5}")
     private int Cp;
 
     @NotNull
